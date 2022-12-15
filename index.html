@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Proyecto: Encuenta</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Proyecto: Encuesta</h1>
+        <p id="description"><i>Esta es una encuenta de practica para un proyecto de HTML y CSS</i></p>
+    </header>
+    <form id="survey-form">
+        <fieldset class="name-mail-age">
+            <label id="name-label" for="name">
+                Nombre
+                <input type="text" name="" id="name" placeholder="Ingrese su nombre" required>
+            </label>
+            <label id="email-label" for="email">
+                Email
+                <input type="email" name="" id="email" placeholder="Ingrese su email" required>
+            </label>
+            <label id="number-label" for="number">
+                Edad
+                <input type="number" name="" id="number" placeholder="Edad" min="18" max="70">
+            </label>
+        </fieldset>
+        <fieldset class="rol">
+            <label for="">
+                ¿Cual opcion describe su rol actual?
+                <select id="dropdown">
+                    <option id="opcion" value="">Selecciona tu rol</option>
+                    <option id="opcion" value="1">Estudiante</option>
+                    <option id="opcion" value="2">Trabajo de tiempo completo</option>
+                    <option id="opcion" value="2">Aprendiz de tiempo completo</option>
+                    <option id="opcion" value="2">Prefiero no decirlo</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset class="sexo">
+            <p>¿Cual es tu sexo?</p>
+            <label for="male">
+                <input type="radio" name="sexo" value="Hombre" id="male"> 
+                Hombre
+            </label>
+            <label for="female">
+                <input type="radio" name="sexo" value="Mujer" id="female"> 
+                Mujer
+            </label>
+        </fieldset>
+        <fieldset class="aptitudes">
+            <p>Seleciona las aptitudes con las que más te identificas.</p>
+            <label for="opc1">
+                <input type="checkbox" value="Alegre" name="" id="opc1"> 
+                Alegre
+            </label>
+            <label for="opc2">
+                <input type="checkbox" value="Sociable" name="" id="opc2"> 
+                Sociable
+            </label>
+            <label for="opc3">
+                <input type="checkbox" value="Callado" name="" id="opc3"> 
+                Callado
+            </label>
+            <label for="opc4">
+                <input type="checkbox" value="Prudente" name="" id="opc4"> 
+                Prudente
+            </label>
+            <label for="opc5">
+                <input type="checkbox" value="Timido" name="" id="opc5"> 
+                Timido
+            </label>
+        </fieldset>
+        <fieldset class="personality">
+            <label for="">Expecifica como es tu personalidad:
+                <textarea name="" id="" cols="30" rows="10" placeholder="Mi personalidad es..."></textarea>
+            </label>
+        </fieldset>
+        <fieldset id="button">
+            <button type="submit" id="submit">Enviar</button>
+        </fieldset>
+    </form>
+</body>
+</html>
